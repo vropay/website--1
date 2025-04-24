@@ -6,7 +6,18 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-	
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="style.css">
+		<!-- Slick Carousel CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+
+
+
 		<!-- This site is optimized with the Yoast SEO plugin v23.3 - https://yoast.com/wordpress/plugins/seo/ -->
 		<title>The Vropay</title>
 		
@@ -426,6 +437,56 @@
 						}
 					});
 			})(window, document, window._wpemojiSettings);
+
+			document.addEventListener("DOMContentLoaded", function () {
+  const obj = document.querySelector(".group-chat-object");
+
+//   story set svg animation 
+  obj.addEventListener("load", function () {
+    const svgDoc = obj.contentDocument;
+    const svg = svgDoc.querySelector("svg");
+    svg.classList.add("animated");
+
+    const style = svgDoc.createElementNS("http://www.w3.org/2000/svg", "style");
+    style.textContent = `
+      #freepik--speech-bubbles--inject-16 {
+        animation: 1s slideDown forwards, 1.5s floating infinite linear;
+        animation-delay: 0s, 1s;
+      }
+
+      @keyframes slideDown {
+        0% { opacity: 0; transform: translateY(-30px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes floating {
+        0%, 100% { transform: translateY(0px); opacity: 1; }
+        50% { transform: translateY(-10px); }
+      }
+    `;
+    svg.appendChild(style);
+  });
+});
+
+  $(document).ready(function(){
+    $('.slick-carousel').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      infinite: true,
+      arrows: true,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  });
+
 		</script>
 		<link rel="stylesheet" id="formidable-css" href="css/formidableforms.css" media="all">
 		<style id="wp-emoji-styles-inline-css">
@@ -629,6 +690,14 @@
 				font-display: fallback;
 				src: url('fonts/SourceSerif4Variable-Italic.ttf.woff2') format('woff2');
 				font-stretch: normal;
+				.slick-carousel .card-container {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
 			}
 		</style>
 		<link rel="icon" href="images/favicon.png" sizes="32x32">
@@ -680,11 +749,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 			<div class="col-3 col-md-3 col-lg-10 align-self-center">
 				<div class="d-flex d-lg-none mobile-menu justify-content-end align-items-center">
-					<div class="mob-search-tab d-none d-lg-none">
-						<div class="image">
-							<img src="images/magnify.svg" alt="Magnify">
-						</div>
-					</div>
 					<div class="burger-menu">
 						<span></span>
 						<span></span>
@@ -942,8 +1006,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 </header>
 
-
-    <!--         <div class="breadcrumbs">
+<!-- 
+            <div class="breadcrumbs">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12">
@@ -963,79 +1027,87 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="breadcrumbs">
             <div class="container">
-                <div class="row justify-content-center">
+                <!-- <div class="row justify-content-center">
                     <div class="col-12">
                         <ul class="breadcrumbs-list">
-                            <li><a href="https://www.vropay.com/">Service Offering</a></li>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
-    <section class="cz-banner" data-aos="fade-up">
-    <div class="container">
-        <div class="row justify-content-between text-center text-md-start">
-            <div class="col-12 col-md-6 col-lg-6">
-                <div class="content">
-                    <h2 class="main-heading" style="color: #007bff;">Flexible Loan Options</h2>
-                    <h2 class="main-heading"  style="color: #0856a9;">Tailored to Your Needs</h2>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="image">
-                        <img class="main-img" src="images/Group-1171278239.png" alt="">
-                        <img class="element" src="images/Group-1410084180.png" alt="">
-                    </div>
-                            </div>
-        </div>
-    </div>
-</section>
-<section class="limitless-growth">
-  <div class="container">
-    <div class="row align-middle">
-      <div class="limitless-block">
-        <div class="col-lg-12">
-          <div class="section-head">
-            <h2 style="color: #0856a9;">How it works</h2>
-            <p><br></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="cards-container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="cards-wrapper">
-            <div class="card-row">
-                                <div class="card-container cont-1">
-                    <div class="card-wrapper">
-                      <img src="images/loan.png" alt="Avail a new loan">
-                      <h3 class="text-center">Avail a new loan</h3>
-                      <p></p>
-                    </div>
-                  </div>
-                                <div class="card-container cont-2">
-                    <div class="card-wrapper">
-                      <img src="images/pay.png" alt="Pay your EMIs <br/>on time">
-                      <h3 class="text-center">Pay your EMIs <br>on time</h3>
-                      <p></p>
-                    </div>
-                  </div>
-                                <div class="card-container cont-3">
-                    <div class="card-wrapper">
-                      <img src="images/opt.png" alt="Opt for  <br/>e-Mandate">
-                      <h3 class="text-center">Opt for  <br>e-Mandate</h3>
-                      <p></p>
-                    </div>
-                  </div>
-                          </div>
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+		<section class="cz-banner" data-aos="fade-up">
+			<div class="container">
+			  <div class="row justify-content-between text-center text-md-start align-items-center">
+				<div class="col-12 col-md-6 col-lg-6">
+				  <div class="content">
+					<h2 class="main-heading" style="color: #007bff;">Empower Your Hustle</h2>
+					<h2 class="main-heading" style="color: #0856a9;">With Smart Tools & Real Community</h2>
+					<p style="margin-top: 15px; font-size: 1.1rem;">
+					  VroPay is your launchpad for growth—blend learning, networking, and action with access to tools, insights, and a vibrant startup ecosystem. 
+					</p>
+				  </div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+				  <div class="image position-relative">
+					<!-- 👇 Removed invalid XML declaration and fixed structure -->
+					<object 
+					  type="image/svg+xml" 
+					  data="images/group-chat-not-css.svg" 
+					  class="group-chat-object animated"
+					  id="freepik_stories-group-chat"
+					  width="100%" 
+					  height="auto"
+					>
+					  Your browser does not support SVGs.
+					</object>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  
+		  <!-- how it works section -->
+		  <section class="limitless-growth">
+			<div class="container">
+			  <div class="section-head">
+				<h2 style="color: #0856a9;">How VroPay Works</h2>
+				<p>Learn, grow, and connect with personalized content and coaching designed to empower your financial journey and startup success.</p>
+			  </div>
+		  
+			  <div class="slick-carousel">
+				<div class="card-container">
+				  <div class="card-wrapper">
+					<img src="images/Startup life-amico.png" alt="Launch your Startup">
+					<h3 class="text-center">Launch Your Startup</h3>
+					<p>Get expert advice and step-by-step guidance for turning your idea into a thriving business.</p>
+				  </div>
+				</div>
+		  
+				<div class="card-container">
+				  <div class="card-wrapper">
+					<img src="images/Literature-bro.png" alt="Master Financial Literacy">
+					<h3 class="text-center">Master Financial Literacy</h3>
+					<p>Access interactive content that makes complex financial concepts easy to understand and apply.</p>
+				  </div>
+				</div>
+		  
+				<div class="card-container">
+				  <div class="card-wrapper">
+					<img src="images/community.png" alt="Join the Community">
+					<h3 class="text-center">Join the Community</h3>
+					<p>Collaborate with like-minded individuals, share insights, and network with industry experts.</p>
+				  </div>
+				</div>
+				<div class="card-container">
+					<div class="card-wrapper">
+					  <img src="images/goal-setting.png" alt="Set Smart Goals">
+					  <h3 class="text-center">Set Smart Goals</h3>
+					  <p>Create actionable financial and business goals with personalized planning tools and ongoing support.</p>
+					</div>
+				  </div>				  
+			  </div>
+			</div>
+		  </section>
+		  
 
 <section class="redemptiomvropay" data-aos="fade-up">
 	<div class="container">

@@ -260,6 +260,19 @@ h2 {
     }
 }
 
+.social-icon {
+    font-size: 20px; /* Set the icon size */
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+    color: #000; /* Set the color of the icon */
+}
+
+.social-icon:hover {
+    transform: scale(1.2) rotate(20deg); /* Make the icon bigger and rotate it */
+    color: #007bff; /* Change color on hover */
+}
+
+
+
 .h3,
 h3 {
     font-size: calc(1.3rem + .6vw)
