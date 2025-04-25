@@ -13,11 +13,9 @@
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
-
-
-
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  
 		<!-- This site is optimized with the Yoast SEO plugin v23.3 - https://yoast.com/wordpress/plugins/seo/ -->
 		<title>The Vropay</title>
 		
@@ -467,14 +465,15 @@
     svg.appendChild(style);
   });
 });
-
-  $(document).ready(function(){
+$(document).ready(function(){
     $('.slick-carousel').slick({
       slidesToShow: 2,
       slidesToScroll: 1,
       infinite: true,
       arrows: true,
       dots: true,
+      autoplay: true,               // enable auto sliding
+      autoplaySpeed: 2000,          // slide every 2000ms (2 seconds)
       responsive: [
         {
           breakpoint: 768,
@@ -486,7 +485,6 @@
       ]
     });
   });
-
 		</script>
 		<link rel="stylesheet" id="formidable-css" href="css/formidableforms.css" media="all">
 		<style id="wp-emoji-styles-inline-css">
@@ -779,7 +777,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-										<div class="proinput">
+										<!-- <div class="proinput">
 											<form role="search" action="#" autocomplete="off"
 												aria-label="Search form">
 												<input aria-label="Search input" type="search" class="orig"
@@ -791,11 +789,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												<input type="submit" value="Start search"
 													style="width:0; height: 0; visibility: hidden;">
 											</form>
-										</div>
+										</div> -->
 
 
 
-										<button class="promagnifier" tabindex="0" aria-label="Search magnifier">
+										<!-- <button class="promagnifier" tabindex="0" aria-label="Search magnifier">
 											<span class="innericon" style="display:block;">
 												<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 													xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -808,19 +806,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					z"></path>
 												</svg>
 											</span>
-										</button>
+										</button> -->
 
 
-
+<!-- 
 										<div class="proloading">
 
 											<div class="asl_loader">
 												<div class="asl_loader-inner asl_simple-circle"></div>
 											</div>
 
-										</div>
+										</div> -->
 
-										<div class="proclose">
+										<!-- <div class="proclose">
 											<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												width="12" height="12" viewBox="0 0 512 512"
@@ -829,7 +827,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 													points="438.393,374.595 319.757,255.977 438.378,137.348 374.595,73.607 255.995,192.225 137.375,73.622 73.607,137.352 192.246,255.983 73.622,374.625 137.352,438.393 256.002,319.734 374.652,438.378 ">
 												</polygon>
 											</svg>
-										</div>
+										</div> -->
 
 
 									</div>
@@ -890,7 +888,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</a></li>
 					</ul>
 					<div class="header-links">
-						<div class="search-tab d-none d-lg-block">
+						<!-- <div class="search-tab d-none d-lg-block">
 							<div class="image">
 								<img src="images/magnify.svg" alt="Magnify">
 							</div>
@@ -898,9 +896,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<div class="asl_w_container asl_w_container_2">
 									<div id="ajaxsearchlite2" data-id="2" data-instance="1"
 										class="asl_w asl_m asl_m_2 asl_m_2_1">
-										<div class="probox">
+										<div class="probox"> -->
 
-
+<!-- 
 											<div class="prosettings" style="display:none;" data-opened="0">
 												<div class="innericon">
 													<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -912,11 +910,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 														</polygon>
 													</svg>
 												</div>
-											</div>
+											</div> -->
 
 
 
-											<div class="proinput">
+											<!-- <div class="proinput">
 												<form role="search" action="#" autocomplete="off"
 													aria-label="Search form">
 													<input aria-label="Search input" type="search" class="orig"
@@ -928,8 +926,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 													<input type="submit" value="Start search"
 														style="width:0; height: 0; visibility: hidden;">
 												</form>
-											</div>
-
+											</div> -->
+<!-- 
 
 
 											<button class="promagnifier" tabindex="0" aria-label="Search magnifier">
@@ -945,10 +943,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					z"></path>
 													</svg>
 												</span>
-											</button>
+											</button> -->
 
 
-
+<!-- 
 											<div class="proloading">
 
 												<div class="asl_loader">
@@ -966,7 +964,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 														points="438.393,374.595 319.757,255.977 438.378,137.348 374.595,73.607 255.995,192.225 137.375,73.622 73.607,137.352 192.246,255.983 73.622,374.625 137.352,438.393 256.002,319.734 374.652,438.378 ">
 													</polygon>
 												</svg>
-											</div>
+											</div> -->
 
 
 										</div>
@@ -1092,14 +1090,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		  
 				<div class="card-container">
 				  <div class="card-wrapper">
-					<img src="images/community.png" alt="Join the Community">
+					<img src="images/Group Chat-cuate.png" alt="Join the Community">
 					<h3 class="text-center">Join the Community</h3>
 					<p>Collaborate with like-minded individuals, share insights, and network with industry experts.</p>
 				  </div>
 				</div>
 				<div class="card-container">
 					<div class="card-wrapper">
-					  <img src="images/goal-setting.png" alt="Set Smart Goals">
+					  <img src="images/Shared goals-cuate.png" alt="Set Smart Goals">
 					  <h3 class="text-center">Set Smart Goals</h3>
 					  <p>Create actionable financial and business goals with personalized planning tools and ongoing support.</p>
 					</div>
@@ -1109,80 +1107,60 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		  </section>
 		  
 
-<section class="redemptiomvropay" data-aos="fade-up">
-	<div class="container">
-	  <h1 class="text-lg-center" style="margin-bottom: 50px; color: #007bff;"> Seamless Auto-Debit for All Loan Options</h1>
-	  <p class="text-lg-center">All repayment processes are backed by our auto-debit e-mandate functionality,
-		ensuring smooth and secure transactions every time.</p>
-		
-	  <div class="benefits-redemp">
-
-
-
- 
-    <section class="loan-info">
-        <div class="container">
-            <h1 class="text-lg-center">Loan Options</h1>
-            <div class="infographic-bar">
-                <!-- Loan Type Selection -->
-                <div class="loan-type">
-                    <label class="text-lg-center" for="loanType">Select Loan Type:</label>
-                    <select id="loanType">
-                        <option value="short-term">Short-Term Loan</option>
-                        <option value="instant-credit">Instant Credit</option>
-                        <option value="credit-line">Credit Line</option>
-                    </select>
-                </div>
-
-                <!-- Loan Amount Slider -->
-                <div class="range-slider">
-                    <label for="amountRange">Loan Amount (₹):</label>
-                    <input type="range" id="amountRange" min="10000" max="150000" step="1000" value="10000">
-                    <span id="amountValue">₹10,000</span>
-                </div>
-
-                <!-- Loan Tenure Slider -->
-                <div class="range-slider">
-                    <label for="tenureRange">Tenure (Months):</label>
-                    <input type="range" id="tenureRange" min="5" max="12" step="1" value="5">
-                    <span id="tenureValue">5 Months</span>
-                </div>
-
-                <!-- EMI Calculation -->
-                <div class="emi-calculation">
-                    <h2 style="color: #0856a9;">EMI Calculation</h2>
-                    <p id="emiResult">₹0</p>
-                </div>
-
-                <!-- Loan Details -->
-                <div style="margin-bottom: 80px; margin-top: 80px;" class="loan-details">
-                    <h2 style="color: #007bff;  margin-bottom: 80px; margin-top: 60px;">Loan Details</h2>
-                    <ul id="loanDetailsList"></ul>
-                </div>
-            </div>
-        </div>
+		  <!-- services offered -->
+		  <section class="services-grid-section">
+			<div class="container">
+			  <div class="section-head text-center">
+				<h2 style="color: #0856a9;">What We Offer at VroPay</h2>
+				<p>Powerful tools and support for your personal and professional growth.</p>
+			  </div>
+			  <div class="services-grid">
+				<div class="service-box">
+				  <img src="gif/Online learning.gif" alt="Distance Learning">
+				  <h3>Personalized Learning</h3>
+				  <p>Customized content that matches your goals and growth journey.</p>
+				</div>
+				<div class="service-box">
+				  <img src="gif/Consultative sales.gif" alt="">
+				  <h3>Financial Coaching</h3>
+				  <p>1-on-1 coaching to make sense of your finances and plan ahead.</p>
+				</div>
+				<div class="service-box">
+				  <img src="gif/Soft skills.gif" alt="">
+				  <h3>Community Challenges</h3>
+				  <p>Grow alongside peers through weekly challenges and shared wins.</p>
+				</div>
+				<div class="service-box">
+				  <img src="images/Telecommuting-rafiki.png" alt="">
+				  <h3>Live Sessions</h3>
+				  <p>Real-time conversations with creators and experts across fields.</p>
+				</div>
+				<div class="service-box">
+				  <img src="gif/Digital tools.gif" alt="">
+				  <h3>Startup Toolkits</h3>
+				  <p>Everything you need from ideation to launch — in one place.</p>
+				</div>
+				<div class="service-box">
+				  <img src="gif/App data.gif" alt="">
+				  <h3>Mobile-First</h3>
+				  <p>VroPay is built for users on the move — clean, fast, intuitive.</p>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  
 
         <script src="script.js"></script>
     </section>
-
-
-
-
 	
+	<section class="redemptiomvropay" data-aos="fade-up">
+		<div class="container">
+		  <h1 class="text-lg-center" style="color: #007bff; margin-bottom: 30px;">Start your financial journey today and count on us for simplicity, trust, and flexibility!</h1>
+		
 </body>
-</html>
 
-
-
-
-
-
-		<section class="redemptiomvropay" data-aos="fade-up">
-			<div class="container">
-			  <h1 class="text-lg-center" style="color: #007bff; margin-bottom: 100px;">Start your financial journey today and count on us for simplicity, trust, and flexibility!</h1>
-			
-				
-			  <div class="benefits-redemp">
+</html>		
+			  <!-- <div class="benefits-redemp">
 
 
 				<section class="mobius-section" data-aos="fade-up" data-aos-delay="300">
@@ -1209,57 +1187,61 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> -->
 
-				<section class="our-vision" style="margin-bottom: 100px;">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-6" data-aos="fade-up">
-								<div class="card-1">
-									<div class="card-content">
-										<h2 style="color: #007bff;">
-											For Small Business Owners: </h2>
-										
-											<ul class="list">
-												<li><p> Business owners often extend credit to their customers, creating a risk of delayed or missed payments.   &nbsp; &nbsp;</p></li>
-												<li><p>Withthe ‘GET MY MONEYBACK’ feature, they can set up an e-mandate that automatically debits the outstanding credit amount from the customer’s bank account on the due date. &nbsp; &nbsp;</p></li>
-												<li><p>Thefunds are directly transferred into the business owner’s current account, streamlining collections and improving cash flow.   &nbsp; &nbsp;</p></li>
-												
-										<!-- <li><span>Freedom from the hassle of repeated loan applications </span></li>
-									<li><span>Quick disbursal </span></li>
-									<li><span>No hidden charges</span></li> -->
-									</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6" data-aos="fade-up">
-								<div class="card-2">
-									<div class="card-content">
-										<h2 style="color: #007bff;">For Working Professionals and Students:</h2>
-										
-											<ul class="list">
-												<li><p> Lending money to friends or family can sometimes lead to repayment uncertainties.&nbsp; &nbsp;</p></li>
-												<li><p>Before transferring funds, the lender can create an e-mandate agreement with the
-													borrower.&nbsp; &nbsp;</p></li>
-												<li><p>Onceapproved, the repayment amount is automatically debited from the borrower’s
-													account, ensuring a secure and stress-free process for personal monetary help.&nbsp; &nbsp;</p></li>
-												
-										<!-- <li><span>Freedom from the hassle of repeated loan applications </span></li>
-									<li><span>Quick disbursal </span></li>
-									<li><span>No hidden charges</span></li> -->
-									</ul>
-									</div>
-								</div>
-							</div>
-			
+				<section class="vision-section">
+					<div class="vision-container">
+					  <!-- Our Vision Section -->
+					  <div class="vision">
+						<h2 class="vision-heading">Our Vision</h2>
+						<div class="vision-cards">
+						  <!-- Card for Small Business Owners -->
+						  <div class="vision-card">
+							<i class="fas fa-business-time fa-5x"></i>
+							<h3>For Small Business Owners</h3>
+							<p>As a small business owner, staying on top of outstanding payments is crucial for maintaining a healthy cash flow. With VroPay, we take the hassle out of payment collection. Our 'Get My MoneyBack' feature allows you to set up an e-mandate that automatically debits the outstanding credit amount from your customers on the agreed due date. This ensures you never have to chase clients for payments again.</p>
+							<p>Once the payment is processed, the funds are directly transferred into your business account, improving liquidity and saving you valuable time. No more chasing overdue invoices—let VroPay handle the financial legwork for you, so you can focus on growing your business.</p>
+							<ul class="vision-list">
+							  <li><i class="fas fa-check-circle"></i><p>Automated payment collection for smoother cash flow.</p></li>
+							  <li><i class="fas fa-check-circle"></i><p>Direct transfers to your business account for faster access to funds.</p></li>
+							  <li><i class="fas fa-check-circle"></i><p>Eliminate the risk of missed or delayed payments with a secure, automatic system.</p></li>
+							</ul>
+						  </div>
+				  
+						  <!-- Card for Working Professionals -->
+						  <div class="vision-card">
+							<i class="fa-solid fa-user-tie fa-5x"></i>
+							<h3>For Working Professionals</h3>
+							<p>Managing personal finances can sometimes be stressful, especially when you lend money to friends or family. The uncertainty of repayment and the awkwardness of asking for money back can strain relationships. VroPay makes it simple and transparent by providing you with the tools to create e-mandate agreements before transferring money to loved ones.</p>
+							<p>With VroPay, once an agreement is made, the repayment is automated. The agreed amount is automatically debited from the borrower’s account on the set date, ensuring that repayments happen without any awkward conversations or delays. You can finally enjoy peace of mind knowing that your personal transactions are being handled efficiently.</p>
+							<ul class="vision-list">
+							  <li><i class="fas fa-check-circle"></i><p>Set up e-mandates to automate repayments for personal loans.</p></li>
+							  <li><i class="fas fa-check-circle"></i><p>No more awkward conversations about money—automated payments do the talking.</p></li>
+							  <li><i class="fas fa-check-circle"></i><p>Rest easy knowing your funds will be returned on time and securely.</p></li>
+							</ul>
+						  </div>
+				  
+						  <!-- Card for Students -->
+						  <div class="vision-card">
+							<i class="fas fa-graduation-cap fa-5x"></i>
+							<h3>For Students</h3>
+							<p>Being a student comes with many financial challenges, especially when managing money between friends or family. You may need to borrow money, or lend some to your peers. However, the confusion around repayments can create unnecessary stress. With VroPay, you can set up e-mandates to automate the repayment process, ensuring that money moves securely and on time without the need for constant reminders.</p>
+							<p>Whether you're borrowing money for textbooks or lending to a friend for a lunch, VroPay provides you with a secure, automated system that handles all repayments. This ensures that you can focus on your studies, without worrying about keeping track of payments or chasing down those who owe you money.</p>
+							<ul class="vision-list">
+							  <li><i class="fas fa-check-circle"></i><p>Set up automated e-mandates to simplify money transfers between you and your peers.</p></li>
+							  <li><i class="fas fa-check-circle"></i><p>Keep track of payments without the hassle of manually following up on repayments.</p></li>
+							  <li><i class="fas fa-check-circle"></i><p>Focus on your studies while VroPay handles your financial agreements securely and efficiently.</p></li>
+							</ul>
+						  </div>
 						</div>
+					  </div>
 					</div>
-				</section>
-			
+				  </section>
+				  
 			
 
 
- <section style="background: #006fe5;"class="redemptiomvropay" data-aos="fade-up" >
+ <!-- <section style="background: #006fe5;"class="redemptiomvropay" data-aos="fade-up" >
   <div class="container"   >
     <h1 class="text-lg-center" style="color: #ffff; margin-bottom: 50px; ">Benefits of ‘GET MY MONEY BACK’</h1>
     <p class="text-lg-center" style="margin-bottom: 100px;  color: #ffff"> Addresses the often-overlooked issue of repayment challenges while doing
@@ -1281,8 +1263,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
               </div>
             </div>
-                 
-                    <div class="col-lg-4">
+                  -->
+                    <!-- <div class="col-lg-4">
 
               <div class="benefits-content">
                 <img style="filter: brightness(0) invert(5);" src="images/ticket-1.png" alt="Movie Ticket">
@@ -1293,9 +1275,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					more.</p>
                 </div>
               </div>
-            </div>
+            </div> -->
                  
-                 
+<!--                  
                     <div class="col-lg-4">
 
               <div class="benefits-content">
@@ -1307,8 +1289,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					every time.</p>
                 </div>
               </div>
-            </div>
-        
+            </div> -->
+<!--         
 
 
 
@@ -1322,7 +1304,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
   </div>
-</section>
+</section> -->
 
 
 

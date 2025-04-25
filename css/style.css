@@ -5073,7 +5073,7 @@ input[type="range"] {
 
 .card-container img {
   width: 100%;
-  max-height: 150px;
+  max-height: 280px;
   object-fit: contain;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -5090,8 +5090,192 @@ input[type="range"] {
   color: #444;
   line-height: 1.4;
 }
+/* Make sure Slick arrows are visible and styled */
+.slick-prev,
+.slick-next {
+  background-color: #0856a9;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 1000;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.85;
+}
 
-/* ------------------------------------------------------------------------------------------------- */
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #064b8b;
+  opacity: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px;
+  color: white;
+}
+
+/* Position the arrows properly within the carousel */
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}
+
+/* Optional: Ensure arrows don’t overlap slides */
+.slick-carousel {
+  position: relative;
+  overflow: visible;
+}
+
+.services-grid-section {
+  padding: 60px 0;
+  background: #fdfdfd;
+}
+.services-grid-section .container {
+  padding-bottom: 30px; /* Ensures there's enough space at the bottom of the container */
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding-top: 30px;
+}
+
+.services-grid-section .section-head h2 {
+  font-size: 2.5rem; /* Adjust the size as per your preference */
+  font-weight: bold; /* Optional, to make it bold */
+}
+
+.service-box {
+  background: linear-gradient(15deg, #ffffff, #f0f9ff, #c0dbf6);
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 10px 15px rgba(0, 123, 139, 0.3); /* Dark blue with reduced shadow */
+  transition: all 0.3s ease-in-out;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.service-box img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.service-box h3 {
+  color: #0856a9;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Vision Section */
+.vision-section {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #ffffff; /* White background */
+}
+
+/* Vision Container */
+.vision-container {
+  width: 100%;
+  max-width: 100%; /* Full width container */
+  padding: 0 15px; /* Padding for responsiveness */
+}
+
+/* Vision Heading */
+.vision-heading {
+  text-align: center;
+  color: #112a77;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Flexbox for Card Layout */
+.vision-cards {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  gap: 30px; /* Space between each card */
+  width: 100%;
+}
+
+/* Vision Card Styling */
+.vision-card {
+  background-color: #d1ebf5; /* Light background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Full width of container */
+  text-align: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for the card */
+.vision-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+/* Card Image Styling */
+.vision-card img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+/* Card Title Styling */
+.vision-card h3 {
+  font-size: 1.5rem;
+  color: #0856a9; /* Blue color */
+  margin-bottom: 15px;
+}
+
+/* Card Text Styling */
+.vision-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.vision-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vision-list li {
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  margin-bottom: 10px;
+}
+
+.vision-list li i {
+  color: #112a77;
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 1.2rem;
+}
+
+.vision-list li p {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+
+---------------------------------------------------------------------------------------------- */
 
 @charset "UTF-8";
 
